@@ -1,5 +1,3 @@
-import kotlin.reflect.typeOf
-
 fun getLambda(nome : String) : Function1<Int,Boolean>{
     when(nome){
         "ePar" -> return {numero -> numero % 2 == 0}
@@ -8,6 +6,7 @@ fun getLambda(nome : String) : Function1<Int,Boolean>{
         else -> return {false}
     }
 }
+
 fun transformaArray(array : Array<Int>,funcao : Function1<Int,Boolean>) : Array<Boolean> {
     val resultado = Array(array.size){false}
     for (count in 0 until array.size) {
@@ -15,8 +14,6 @@ fun transformaArray(array : Array<Int>,funcao : Function1<Int,Boolean>) : Array<
     }
     return resultado
 }
-
-
 
 fun main(){
 }
