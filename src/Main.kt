@@ -19,9 +19,4 @@ fun transformaArray(array : Array<Int>,funcao : Function1<Int,Boolean>) : Array<
 
 
 fun main(){
-    val resultado = transformaArray(arrayOf(5,15,25), getLambda("entre10e20"))
-    for (b in resultado) {
-        println(b)
-    }
-
 }
